@@ -10,7 +10,7 @@ hist_button = st.button('Construir histograma')
 dist_button = st.button('construir una dispersion')
 
 #Encabezado
-st.header('Grafico de Automovil')
+st.header('Graficos a puerba: Automovil')
 
 # Al hacer clic en el botón
 if hist_button:
@@ -24,7 +24,7 @@ if hist_button:
     st.plotly_chart(fig, use_container_width=True)
 
 if dist_button:
-    st.write('crecion de un grafico de dispersion para el conjunto de datos de anuncions de venta de coches')
+    st.write('Crecion de un gráfico de dispersión para el conjunto de datos de venta de coches')
 
     fig = px.scatter(car_data, x ='model_year', y ='price')
     st.plotly_chart(fig, use_container_width=True)
