@@ -6,11 +6,11 @@ import plotly.express as px  # Nota: no es "plotly_express"
 car_data = pd.read_csv('notebooks/vehicles_us.csv')
 
 # Crear un botón
-hist_button = st.button('Construir histograma')
-dist_button = st.button('construir una dispersion')
+hist_button = st.button('Construir un gráfico histograma')
+dist_button = st.button('construir un gráfico dispersión')
 
 #Encabezado
-st.header('Graficos a puerba: Automovil')
+st.header('Graficos a prueba: Automovil')
 
 # Al hacer clic en el botón
 if hist_button:
